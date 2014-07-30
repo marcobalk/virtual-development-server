@@ -12,6 +12,7 @@ Repository with information on how to create a solid development server in a sho
 	- Create virtual machine (VirtualBox)
 	- Ubuntu installation
 	- Apache
+	- /etc/hosts on Host
 	- Need to know
 
 <!-- /MarkdownTOC -->
@@ -106,6 +107,22 @@ My current vhost:
     UseCanonicalName Off
     VirtualDocumentRoot /data/%1/http/
 </VirtualHost>
+```
+
+### ServerName
+Open /etc/apache2/apache2.conf and add to the bottom of the file
+```ApacheConf
+ServerName ubuntu1404 # or anything else you like
+```
+
+Needless to say, you'll have to reload Apache to make changes effective: `$ sudo service apache2 reload`
+
+## /etc/hosts on Host
+Edit your /etc/hosts on your Host machine and add the following lines:
+```Shell
+192.168.56.101 ubuntu1404
+192.168.56.101 dev.ubuntu1404
+192.168.56.101 <project>.dev.ubuntu1404
 ```
 
 ## Need to know
