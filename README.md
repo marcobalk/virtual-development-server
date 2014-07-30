@@ -3,13 +3,44 @@ virtual-development-server
 
 Repository with information on how to create a solid development server in a short amount of time
 
+# TOC
+<!-- MarkdownTOC depth=2 -->
+
+- Development Server Installation
+	- Requirements
+	- Install VirtualBox
+	- Create virtual machine (VirtualBox)
+	- Need to know
+
+<!-- /MarkdownTOC -->
+
+
 # Development Server Installation
 
-## Requirements:
+## Requirements
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 - [Ubuntu 14.04 LTS image](http://www.ubuntu.com/download/server)
 
-## Need to know:
+## Install VirtualBox
+Just install VirtualBox like you install other software. If this is not enough information, please read the [VirtualBox manual](https://www.virtualbox.org/manual/UserManual.html)
+
+### Create Host-only network
+Before creating a virtual machine, open the VirtualBox settings and go to the Network tab. There you can create NAT networks as well as Host-only networks. For my virtual machines I use a Host-only network, so create one (default named 'vboxnet0').
+
+## Create virtual machine (VirtualBox)
+Below are some typical settings I use. Please feel free to use alternate values.
+
+### General
+- Type: Linux
+- Version: Ubuntu (64 bit)
+
+### System
+- Memory: 1024MB
+
+### Storage
+- HDD: 16GB
+
+## Need to know
 - added 2 Network Interfaces
   - Host-Only (create one within VirtualBox): this one is used for local communication. Has static IP, so no worry when your IP changes while using multiple networks (home, office, etc.)
   - Bridged: this one is for internet communication (updates, API's, etc.)
