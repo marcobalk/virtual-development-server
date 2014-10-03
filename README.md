@@ -7,13 +7,14 @@ Repository with information on how to create a solid development server in a sho
 <!-- MarkdownTOC depth=2 -->
 
 - Development Server Installation
-	- Requirements
-	- Install VirtualBox
-	- Create virtual machine (VirtualBox)
-	- Ubuntu installation
-	- Apache
-	- /etc/hosts on Host
-	- Need to know
+    - Requirements
+    - Install VirtualBox
+    - Create virtual machine (VirtualBox)
+    - Ubuntu installation
+    - Apache
+    - /etc/hosts on Host
+    - Need to know
+    - Todo / wishlist
 
 <!-- /MarkdownTOC -->
 
@@ -133,3 +134,9 @@ Edit your /etc/hosts on your Host machine and add the following lines:
 - Beware of DNS Rebinding trap: http://xs4all.ipv6.narkive.com/GOzl3Gdl/de-dns-van-fritzbox-7390-vindt-hosts-met-eigen-ipv6-nummers-niet-leuk
 - On host: add `umask 002` to ~/.bash_profile. With this fix the files you create on your host are also Group writable, so you'll only have to share the group on the guest to be able to write to files.
 - On guest: add user to www-data group and group of NFS share (could be 'dialout'), also added www-data to group of NFS share
+
+
+## Todo / wishlist
+- nginx
+- varnish
+- nodejs
