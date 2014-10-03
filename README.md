@@ -12,6 +12,7 @@ Repository with information on how to create a solid development server in a sho
     - Create virtual machine (VirtualBox)
     - Ubuntu installation
     - Apache
+    - Memcached
     - /etc/hosts on Host
     - Need to know
     - Todo / wishlist
@@ -117,6 +118,14 @@ ServerName ubuntu1404 # or anything else you like
 ```
 
 Needless to say, you'll have to reload Apache to make changes effective: `$ sudo service apache2 reload`
+
+## Memcached
+To install [Memcached](http://memcached.org/) use the following guide:
+```Shell
+sudo apt-get install php5 php5-memcache php-pear memcached build-essential
+sudo pecl install memcache
+```
+More information here: [How to install and use Memcache](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 
 ## /etc/hosts on Host
 Edit your /etc/hosts on your Host machine and add the following lines:
