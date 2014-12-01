@@ -6,16 +6,16 @@ Repository with information on how to create a solid development server in a sho
 # TOC
 <!-- MarkdownTOC depth=2 -->
 
-- Development Server Installation
-    - Requirements
-    - Install VirtualBox
-    - Create virtual machine (VirtualBox)
-    - Ubuntu installation
-    - Apache
-    - Memcached
-    - /etc/hosts on Host
-    - Need to know
-    - Todo / wishlist
+- [Development Server Installation](#development-server-installation)
+    - [Requirements](#requirements)
+    - [Install VirtualBox](#install-virtualbox)
+    - [Create virtual machine (VirtualBox)](#create-virtual-machine-virtualbox)
+    - [Ubuntu installation](#ubuntu-installation)
+    - [Apache](#apache)
+    - [Memcached](#memcached)
+    - [/etc/hosts on Host](#etchosts-on-host)
+    - [Need to know](#need-to-know)
+    - [Todo / wishlist](#todo--wishlist)
 
 <!-- /MarkdownTOC -->
 
